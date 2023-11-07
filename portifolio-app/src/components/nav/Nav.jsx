@@ -1,4 +1,4 @@
-import React, { useEffect, useState, forwardRef, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Nav = ({
@@ -84,16 +84,17 @@ const Wrapper = styled.div`
       background-image: #3f575b83;
     }
   }
-  @media screen and (max-width: 552px) {
+  @media screen and (max-width: 552px) and (max-width: 1500px) {
     nav {
       .container {
         height: 3rem;
         justify-content: center;
+
         ul {
-          margin-right: 0;
+          margin-right: 0.4rem;
           li {
-            margin: 0 0.8rem;
-            font-size: 1rem;
+            margin: 0 0.4rem;
+            font-size: 0.9rem;
             font-weight: 700;
             width: 5.5rem;
             height: 1.8rem;
@@ -103,4 +104,4 @@ const Wrapper = styled.div`
     }
   }
 `;
-export default forwardRef(Nav);
+export default Nav;

@@ -109,6 +109,7 @@ const About = () => {
             {knowledegBox.map((box) => {
               return (
                 <div
+                  key={box.id}
                   className="clipPathContainer"
                   data-aos="fade-right"
                   data-aos-delay="600"
@@ -292,7 +293,8 @@ const Wrapper = styled.div`
     }
     .topTexts {
       width: 100%;
-      padding-left: 8rem;
+      padding-left: 11rem;
+      margin-bottom: rem;
 
       .h4Box {
         display: flex;
@@ -395,25 +397,25 @@ const Wrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 552px) {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 0;
     .aboutContainer {
       .titleCoantainer {
-        width: 30rem;
+        width: 26rem;
         height: 5rem;
         margin-bottom: 5rem;
         .titleGlass {
-          width: 28rem;
-          height: 5rem;
+          width: 23rem;
+          height: 4rem;
         }
         .Title {
-          font-size: 3.3rem;
+          font-size: 2.8rem;
           letter-spacing: 0.8rem;
         }
       }
       .profilecontainer {
         flex-direction: column;
-        width: 30rem;
+        width: 23rem;
         height: 55rem;
         display: flex;
         justify-content: start;
@@ -421,8 +423,8 @@ const Wrapper = styled.div`
         margin: 0rem 0 2rem 0;
 
         .containerText {
-          width: 28rem;
-          height: 22rem;
+          width: 23rem;
+          height: 26rem;
           margin-right: 0;
           padding: 0.5rem;
           margin-bottom: 2rem;
@@ -460,19 +462,20 @@ const Wrapper = styled.div`
         }
         .containerSkills {
           .outLineColor {
-            width: 30rem;
+            width: 23rem;
             height: 9rem;
 
             .skillBox {
-              width: 29.5rem;
+              width: 28rem;
               height: 8.5rem;
+
               .left {
                 span {
                   font-size: 1.4rem;
                   font-weight: 700;
                 }
                 p {
-                  margin-top: 0.5rem;
+                  margin-top: 0.2rem;
                   font-size: 1.1rem;
                   line-height: 1.5rem;
                   font-weight: 300;
@@ -502,6 +505,300 @@ const Wrapper = styled.div`
             width: 10rem;
             height: 10rem;
             margin-bottom: 1rem;
+            .techtName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #063592;
+              position: absolute;
+              font-size: 1.2rem;
+              color: #d8d6d6;
+              top: 0;
+              width: 100%;
+              margin-right: 1.2rem;
+              padding: 0.4rem 0;
+            }
+            .spanIcon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 3em;
+              margin-bottom: 0;
+              color: #dedcdc;
+              margin-left: 2rem;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    margin-top: 0;
+    .aboutContainer {
+      .titleCoantainer {
+        width: 30rem;
+        height: 7rem;
+        margin-bottom: 5rem;
+        .titleGlass {
+          width: 26rem;
+          height: 4rem;
+        }
+        .Title {
+          font-size: 2.9rem;
+          letter-spacing: 0.8rem;
+        }
+      }
+      .profilecontainer {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0rem 0 2rem 0;
+
+        .containerText {
+          width: 45%;
+          height: 90%;
+          margin-right: 0;
+          padding: 0.5rem;
+          margin-bottom: 2rem;
+          margin-top: -0.4rem;
+          h4 {
+            font-size: 1.8rem;
+            font-weight: 4500;
+            margin: 0;
+            z-index: 99;
+            font-family: "poppins";
+            line-height: 2rem;
+            margin-bottom: 1rem;
+            span {
+              font-size: 1.3rem;
+              font-weight: 400;
+              z-index: 99;
+              font-family: "poppins";
+            }
+          }
+          h5 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            z-index: 99;
+            font-family: "poppins";
+          }
+          p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            z-index: 99;
+            font-weight: 500;
+            font-family: "poppins";
+            color: black;
+          }
+        }
+        .containerSkills {
+          width: 45%;
+          .outLineColor {
+            width: 100%;
+            height: 10rem;
+
+            .skillBox {
+              width: 100%;
+              height: 9.4rem;
+
+              .left {
+                span {
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                }
+                p {
+                  margin-top: 0.2rem;
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+      }
+      .topTexts {
+        padding: 1rem;
+        .h4Box {
+          .h4Conhecimento {
+            font-size: 2.2rem;
+          }
+        }
+        .pConhecimento {
+          font-size: 1.3rem;
+          width: 100%;
+          margin-bottom: 1.8rem;
+        }
+      }
+      .bcgContainer {
+        .boxTechContainer {
+          .clipPathContainer {
+            background-color: #051e4bdd;
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            .techtName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #063592;
+              position: absolute;
+              font-size: 1rem;
+              color: #d8d6d6;
+              top: 0;
+              width: 100%;
+              margin-right: 1.2rem;
+              padding: 0.4rem 0;
+            }
+            .spanIcon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 3em;
+              margin-bottom: 0;
+              color: #dedcdc;
+              margin-left: 2rem;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 2) {
+    margin-top: 0;
+    .aboutContainer {
+      .titleCoantainer {
+        width: 35rem;
+        height: 8rem;
+        margin-bottom: 5rem;
+        .titleGlass {
+          width: 29rem;
+          height: 4rem;
+        }
+        .Title {
+          font-size: 3.6rem;
+          letter-spacing: 0.8rem;
+        }
+      }
+      .profilecontainer {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0rem 0 2rem 0;
+        .containerText {
+          width: 45%;
+          height: 90%;
+          margin-right: 0;
+          padding: 0.5rem;
+          margin-bottom: 2rem;
+
+          h4 {
+            font-size: 2.2rem;
+            font-weight: 4500;
+            margin: 0;
+            z-index: 99;
+            font-family: "poppins";
+            line-height: 2.5rem;
+            margin-bottom: 1.5rem;
+            span {
+              font-size: 1.3rem;
+              font-weight: 400;
+              z-index: 99;
+              font-family: "poppins";
+            }
+          }
+          h5 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            z-index: 99;
+            font-family: "poppins";
+          }
+          p {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            z-index: 99;
+            font-weight: 400;
+            font-family: "poppins";
+            color: black;
+          }
+        }
+        .containerSkills {
+          width: 45%;
+          .outLineColor {
+            width: 100%;
+            height: 10rem;
+
+            .skillBox {
+              width: 100%;
+              height: 9.4rem;
+
+              .left {
+                span {
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                }
+                p {
+                  margin-top: 0.2rem;
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+      }
+      .topTexts {
+        padding: 1rem;
+        .h4Box {
+          .h4Conhecimento {
+            font-size: 2.2rem;
+          }
+        }
+        .pConhecimento {
+          font-size: 1.3rem;
+          width: 100%;
+          margin-bottom: 1.8rem;
+        }
+      }
+      .bcgContainer {
+        .boxTechContainer {
+          .clipPathContainer {
+            background-color: #051e4bdd;
+            width: 11rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            .techtName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #063592;
+              position: absolute;
+              font-size: 1.3rem;
+              color: #d8d6d6;
+              top: 0;
+              width: 100%;
+              margin-right: 1.5rem;
+              padding: 0.4rem 0;
+            }
+            .spanIcon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 2.5rem;
+              margin-bottom: 0;
+              color: #dedcdc;
+              margin-left: 2rem;
+              margin-top: 1rem;
+            }
           }
         }
       }

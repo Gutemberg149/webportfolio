@@ -6,6 +6,7 @@ import { SiTypescript, SiStyledcomponents } from "react-icons/si";
 
 const knowledegBox = [
   {
+    id: 1,
     icon: <AiOutlineHtml5 />,
     tec: "HTML5",
     textPortugues:
@@ -14,6 +15,7 @@ const knowledegBox = [
       "HTML5 (Hypertext Markup Language 5) is a markup language used for structuring and presenting content on the World Wide Web.",
   },
   {
+    id: 2,
     icon: <DiCss3 />,
     tec: "CSS",
     textPortugues:
@@ -22,6 +24,7 @@ const knowledegBox = [
       " CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
   },
   {
+    id: 3,
     icon: <IoLogoJavascript />,
     tec: "JavaScript",
     textPortugues:
@@ -30,6 +33,7 @@ const knowledegBox = [
       "JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive.",
   },
   {
+    id: 4,
     icon: <FaReact />,
     tec: "React",
     textPortugues:
@@ -38,6 +42,7 @@ const knowledegBox = [
       "React is an open-source JavaScript front-end library focused on creating user interfaces on web pages.",
   },
   {
+    id: 5,
     icon: <SiTypescript />,
     tec: "TypeScript",
     textPortugues:
@@ -46,9 +51,9 @@ const knowledegBox = [
       "TypeScript is programming language open sorce, developed by Microsoft, that adds static typing with optional type annotations to JavaScript",
   },
   {
+    id: 6,
     icon: <SiStyledcomponents />,
     tec: "Styled Comp.",
-    // tec2: "Comp.",
     textPortugues:
       "Biblioteca que possibilita escrever códigos CSS dentro do JavaScript. ",
     textInglish:

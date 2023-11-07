@@ -1,8 +1,8 @@
 import onrunning01 from "../components/images/project/onrunning01.jpeg";
-
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
-import { SiTypescript, SiStyledcomponents } from "react-icons/si";
+import { SiStyledcomponents } from "react-icons/si";
+
 const projectsApi = [
   {
     id: 1,
@@ -13,7 +13,7 @@ const projectsApi = [
     tecIcon3: <IoLogoJavascript />,
     about:
       "Copia do e-commerce On Running, da forma que ele estava na data que escrevi os codigos. Desenvolvido com JaVascript, React e Style Components.",
-    link: "//jhj:www.shjsa.com.br",
+    link: "https://onruuning-hj16r64oy-gutemberg-silvas-projects.vercel.app",
   },
   {
     id: 2,
